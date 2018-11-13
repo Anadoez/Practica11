@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <table>
+            <tr>
+                <td>
+                    <label for="tratamiento">
+                        Tratamiento:*<br>
+                        <input type="radio" name="tratamiento" required="required" value="Sr.">Sr.
+                        <input type="radio" name="tratamiento" value="Sra.">Sra.
+                    </label>
+                </td>
+                <td>
+                    <label for="nombre">
+                        Nombre:*<br>
+                        <input type="text" name="nombre" required="required">
+                    </label>
+                </td>
+                <td>
+                    <label for="apell1">
+                        Apellido 1:*<br>
+                        <input type="text" name="apell1" required="required">
+                    </label>
+                </td>
+                <td>
+                    <label for="apell2">
+                        Apellido 2:<br>
+                        <input type="text" name="apell2">
+                    </label> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tipoDoc">
+                        Tipo Doc:*<br>
+                        <select name="tipoDoc" required="required">
+                            <option value="dni" selected>D.N.I.</option>
+                            <option value="nie">Tarj.Resid./NIE</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <label for="nDoc">
+                        Nº Doc:* <small class="interr" title="Formato del NIF:00000000X Formato NIE:X00000000Y">?</small><br>
+                        <input type="text" name="nDoc" required="required">
+                    </label>
+                </td>
+                <td>
+                    <label for="fechaNac">
+                        Fecha de nacimiento:*<small class="interr" title="El formato de nacimiento debe ser dd/mm/aaaa">?</small><br>
+                        <input type="date" name="fechaNac" required="requires">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="trabajo">
+                        Trabajo*<br>
+                        <select name="trabajo" required="required">
+                            <option value="noTrabaja">No trabaja</option>
+                            <option value="cuentaAjena">Por cuenta ajena</option>
+                            <option value="cuentaPropia">Por cuenta propia</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <label for="actividad">
+                        Tipo de actividad*<br>
+                        <select name="actividad" required="required">
+                            <option value="tareasHogar">Tareas del hogar</option>
+                            <option value="estudiante">Estudiante</option>
+                            <option value="desempleado">Desempleado</option>
+                            <option value="jubilado">Jubilado</option>
+                            <option value="pensionista">Pensionista</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <label for="sector">
+                        Sector Profesional*<br>
+                        <select name="sector" required="required">
+                            <option value="NoTrabaja">No trabaja</option>
+                            <option value="banca">Banca</option>
+                            <option value="construccion">Construcción</option>
+                            <option value="energia">Energía</option>
+                            <option value="industria">Industria</option>
+                            <option value="rrhh">Recursos Humanos</option>
+                            <option value="servicios">Servicios</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <label for="empresa">
+                        Empresa:*<small class="interr" title="Introduzca el nombre completo de la entidad o empresa de la que proceden sus ingresos, si usted trabaja por cuenta propia podrá<br>indicar su nombre, en caso de pensión o prestación social indique Seguridad Social o INEM">?</small>
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
