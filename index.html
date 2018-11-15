@@ -164,8 +164,68 @@
                         <input type="numeric" name="numero" required="required">
                     </label>
                 </td>
+                <td>
+                    <label for="piso">
+                        Piso<br>
+                        <input type="text" name="piso">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="urb">
+                        Urb./Pol./Otros<br>
+                        <input type="text" name="urb">
+                    </label>
+                </td>
+                <td>
+                    <label for="localidad">
+                        Localidad*<br>
+                        <input type="text" name="localidad" required="required">
+                    </label>
+                </td>
+                <td>
+                    <label for="provincia">
+                        Provincia*
+                        <select name="provincia" required="required">
+                            <option value="coru">A CORUÑA</option>
+                            <option value="barcelona">BARCELONA</option>
+                            <option value="caceres">CACERES</option>
+                            <option value="granada">GRANADA</option>
+                            <option value="huesca">HUESCA</option>
+                            <option value="valencia">VALENCIA</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <label for="cp">
+                        Código Postal*<br>
+                        <input type="text" name="cp" required="required">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="movil">
+                        Teléfono móvil:*<small title="Intriduzca su número de teléfono móvil sin espacios. Por ejemplo: 616000000">?</small><br>
+                        <input type="number" name="movil" required="required">
+                    </label>
+                </td>
+                <td>
+                    <label for="tel">
+                        Teléfono particular:<small title="Introduzca su número de teléfono fijo sin espacios. Por ejemplo: 910000000">?</small><br>
+                        <input type="number" name="tel">
+                    </label>
+                </td>
+                <td>
+                    <label for="email">
+                        Dirección de e-mail:*<small title="Introduzca su email. A través de esta dirección nos pondremos en contacto con usted para informarle sobre el estado de su cuenta">?</small><br>
+                        <input type="text" required="required" name="email">
+                    </label>
+                </td>
             </tr>
         </table>
+        <p>Para ofrecerle un mejor servicio nos sería útil conocer si posee en otra entidad:</p>
     </form>
 </body>
 </html>
