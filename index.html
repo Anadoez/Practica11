@@ -130,8 +130,38 @@
                         <select name="origen">
                             <option value="nomi" selected>Mi nómina, pensión o prestación por desempleo</option>
                             <option value="empresa">Mi empresa o negocio</option>
-                            <option value=""></option>
+                            <option value="inmoviliaria">Rentas inmobiliarias</option>
+                            <option value="capital">Rentas de capital</option>
+                            <option value="sociales">Prestaciones sociales</option>
+                            <option value="otros">Otros: Herencias, loterías</option>
+                            <option value="prestamo">Préstamo</option>
                         </select>
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <table id="tabla">
+            <tr>
+                <td>
+                    <label for="via">
+                        Tipo de vía:*<br>
+                        <select name="via">
+                            <option value="av">AVENIDA</option>
+                            <option value="calle" selected>CALLE</option>
+                            <option value="plaza">PLAZA</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <label for="direccion">
+                        Dirección*<br>
+                        <input type="text" name="direccion" required="required">
+                    </label>
+                </td>
+                <td>
+                    <label for="numero">
+                        Número*<br>
+                        <input type="numeric" name="numero" required="required">
                     </label>
                 </td>
             </tr>
