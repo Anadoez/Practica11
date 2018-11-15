@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <linkv rel="stylesheet" type="text/css" href="formulario.css">
     <title>Document</title>
 </head>
 <body>
@@ -98,7 +99,39 @@
                 </td>
                 <td>
                     <label for="empresa">
-                        Empresa:*<small class="interr" title="Introduzca el nombre completo de la entidad o empresa de la que proceden sus ingresos, si usted trabaja por cuenta propia podrá<br>indicar su nombre, en caso de pensión o prestación social indique Seguridad Social o INEM">?</small>
+                        Empresa:*<small class="interr" title="Introduzca el 
+                        nombre completo de la entidad o empresa de la que proceden 
+                        sus ingresos, si usted trabaja por cuenta propia podrá indicar   
+                        su nombre, en caso de pensión o prestación social indique 
+                        Seguridad Social o INEM">?</small><br>
+                        <input type="text" name="empresa" required="required">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="proposito">
+                        Propósito de la cuenta:*<br>
+                        <select name="proposito" required="required">
+                            <option value="domicilNom">domiciliar mi nómina,recibos</option>
+                            <option value="gestEmpresa">Gestión de mi empresa</option>
+                            <option value="ahorro" selected>Ahorro</option>
+                            <option value="planes">Fondos,planes,bolsa</option>
+                            <option value="financiacion">Obtener financiación</option>
+                            <option value="gestNegocio">Gestión de mi negocio</option>
+                            <option value="domRecib">domiciliar recibos</option>
+                            <option value="ingresos">realizar ingreso</option>
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <label for="origen">
+                        Origen de sus ahorros:*<br>
+                        <select name="origen">
+                            <option value="nomi" selected>Mi nómina, pensión o prestación por desempleo</option>
+                            <option value="empresa">Mi empresa o negocio</option>
+                            <option value=""></option>
+                        </select>
                     </label>
                 </td>
             </tr>
