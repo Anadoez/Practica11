@@ -1,17 +1,21 @@
+<!-----------------------------creada por:Diana ------------------------------------------------->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <linkv rel="stylesheet" type="text/css" href="formulario.css">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
     <title>Document</title>
 </head>
 <body>
-    <form method="POST">
-        <table>
+    <h1>FORMULARIO 1</h1>
+<!-----------------FORMULARIO1------------------------------------------------------------------->
+    <form method="POST" id="form1">
+        <table id="tabla1">
             <tr>
                 <td>
+                    <!-----------------------1ºlínea de campos---------------------------->
                     <label for="tratamiento">
                         Tratamiento:*<br>
                         <input type="radio" name="tratamiento" required="required" value="Sr.">Sr.
@@ -37,6 +41,7 @@
                     </label> 
                 </td>
             </tr>
+            <!---------2º linea de campos----------------------------------------->
             <tr>
                 <td>
                     <label for="tipoDoc">
@@ -108,6 +113,7 @@
                     </label>
                 </td>
             </tr>
+            <!---------------3º linea de campos----------------------------------->
             <tr>
                 <td>
                     <label for="proposito">
@@ -140,7 +146,9 @@
                 </td>
             </tr>
         </table>
-        <table id="tabla">
+        <!-----------------------Tabla sombreada------------------------------->
+        <table id="tabla2">
+            <!--------------------1ºlinea--------------------------------------->
             <tr>
                 <td>
                     <label for="via">
@@ -155,7 +163,7 @@
                 <td>
                     <label for="direccion">
                         Dirección*<br>
-                        <input type="text" name="direccion" required="required">
+                        <input type="text" name="direccion" required="required" size="40">
                     </label>
                 </td>
                 <td>
@@ -171,6 +179,7 @@
                     </label>
                 </td>
             </tr>
+            <!----------------2ºlinea----------------------------------------------->
             <tr>
                 <td>
                     <label for="urb">
@@ -186,8 +195,9 @@
                 </td>
                 <td>
                     <label for="provincia">
-                        Provincia*
+                        Provincia*<br>
                         <select name="provincia" required="required">
+                            <option>  </option>
                             <option value="coru">A CORUÑA</option>
                             <option value="barcelona">BARCELONA</option>
                             <option value="caceres">CACERES</option>
@@ -204,28 +214,107 @@
                     </label>
                 </td>
             </tr>
+            <!------------------------------3ºlinea----------------------------------------->
             <tr>
                 <td>
                     <label for="movil">
-                        Teléfono móvil:*<small title="Intriduzca su número de teléfono móvil sin espacios. Por ejemplo: 616000000">?</small><br>
+                        Teléfono móvil:*<small class="interr" title="Intriduzca su número de teléfono móvil sin espacios. Por ejemplo: 616000000">?</small><br>
                         <input type="number" name="movil" required="required">
                     </label>
                 </td>
                 <td>
                     <label for="tel">
-                        Teléfono particular:<small title="Introduzca su número de teléfono fijo sin espacios. Por ejemplo: 910000000">?</small><br>
-                        <input type="number" name="tel">
+                        Teléfono particular:<small class="interr" title="Introduzca su número de teléfono fijo sin espacios. Por ejemplo: 910000000">?</small><br>
+                        <input type="tel" name="tel">
                     </label>
                 </td>
-                <td>
+                <td colspan="2">
                     <label for="email">
-                        Dirección de e-mail:*<small title="Introduzca su email. A través de esta dirección nos pondremos en contacto con usted para informarle sobre el estado de su cuenta">?</small><br>
-                        <input type="text" required="required" name="email">
+                        Dirección de e-mail:*<small class="interr" title="Introduzca su email. A través de esta dirección nos pondremos en contacto con usted para informarle sobre el estado de su cuenta">?</small><br>
+                        <input type="text" required="required" name="email" size="50">
                     </label>
                 </td>
             </tr>
         </table>
+        <hr>
+        <!-------------------------------Zona checkbox---------------------------------------->
+        <div class="check">
         <p>Para ofrecerle un mejor servicio nos sería útil conocer si posee en otra entidad:</p>
+        <p>
+            <input type="checkbox" name="otraEntidad" value="planPensiones">Plan de pensiones 
+            <input type="checkbox" name="otraEntidad" value="fondos">Fondos
+            <input type="checkbox" name="otraEntidad" value="accione">Acciones
+            <input type="checkbox" name="otraEntidad" value="hipoteca">Hipoteca
+            <input type="checkbox" name="otraEntidad" value="prestamo">Préstamo
+            <input type="checkbox" name="otraEntidad" value="seguroVida">Seguro de vida      
+            </p>
+        </div>
+        <hr>
+        <!----------Política de privacidad y boton submit------------------------------>
+        <div class="check">
+            <div class="caja1">
+                <small>Puede consultar en nuestra Web o solicitarnos toda la <a href="recursos/InfPrecontractual.pdf">Información Precontractual </a>de nuestros productos. 
+                    Al pulsar "Continuar" está aceptando la <a href="recursos/LOPD.pdf">Cláusula de Protección de datos.</a><br><br>(*)Los campos marcados con asterisco son obligatorios.</small>
+            </div>
+            <div class="caja2">
+                <input type="submit" value="Continuar" name="continuar">
+            </div>
+            <br><br><br><br><br><br>
+        </div>
+    </form>
+    <!----------------FIN DEL FORM1----------------------------------------------->
+    <br><br><br><br><br><br><br>
+    <h1>FORMULARIO 2</h1>
+<!----------------------EMPIEZA EL FORM2----------------------------------------------->
+    <div class="foto">
+        <img src="recursos/form2Menu.PNG">
+    </div>
+    <form method="POST" id="form2">
+        <p class="caja3">
+            <label for="mail">
+                E-mail<span class="remarcado">*</span><br>
+                <input type="email" required="required" name="mail" size="40">
+            </label>
+        </p>
+        <p class="caja3">  
+            <label for="dni">
+                DNI o Tarjeta de residencia<span class="remarcado">*</span><br>
+                <input type="text" required="required" name="dni" size="40">
+            </label>
+        </p>  
+        <p class="caja3">
+            <label for="fNac">
+                Fecha de nacimiento<span class="remarcado">*</span><br>
+                <input type="date" required="required" name="fNac">
+            </label>
+        </p>
+        <p class=" clear">
+            <span class="remarcado">*</span>Campo obligatorio
+        </p>    
+       
+       <br><br><br><br>
+       <p class="gris">Consulte la <a href="recursos/InfPrecontractual.pdf">Información Precontractual</a> de la cuenta NÓMINA que también encontrará en el apartado de "información legal".</p>
+       <textarea cols="250" rows="15" readonly>
+            Información básica sobre protección de datos de ING BANK NV, Sucursal en España.
+
+            ¿Quién es el Responsable del tratamiento de sus datos personales? ING BANK NV, Sucursal en España (ING) con domicilio en C/ Severo Ochoa 2, 28232 Las Rozas (Madrid). Disponemos de un Delegado de Protección de Datos cuya dirección es dpo@ing.es.
+            
+            ¿Cómo obtenemos sus datos personales? Los habrá facilitado usted o habremos accedido a ellos a raíz de sus consultas, solicitudes o contrataciones de productos, operaciones o transacciones que haya realizado con nosotros, su navegación por sitios Web, propios o de terceros, o que hayamos obtenido del uso de dispositivos móviles de telecomunicaciones, TPV´s, cajeros automáticos u otros canales legítimos. También pueden haber sido cedidos legítimamente por terceros si usted nos ha autorizado en el ámbito de la contratación de un producto o prestación de un servicio. Le informamos de que ING BANK utilizará sus números de teléfono móvil y su correo electrónico para informarle, puntualmente, sobre cualquier aspecto relacionado con sus cuentas así como de que la información relativa a sus productos le será remitida por Internet a través de correspondencia web, pudiendo, no obstante, revocar esta opción en cualquier momento. En caso de que facilite los datos de un segundo interviniente en la contratación de un producto trataremos los mismos de la forma indicada en esta información. En caso de que no formalice su alta como interviniente en el producto en un plazo máximo de 3 meses, sus datos serán eliminados.
+            
+            ¿Para qué tratamos sus datos personales? Tratamos sus datos con el fin de gestionar y prestar el servicio que haya solicitado o contratado, y asegurarnos de que le ofrecemos los mejores productos y servicios financieros, según sus necesidades, llevando a cabo análisis y /o estudios que nos permiten mejorar la calidad de nuestros servicios y comunicarle nuestras ofertas. En relación con nuestros productos de crédito, tratamos sus datos de solvencia económica para cumplir con la obligación legal de analizar su capacidad de pago, y también porque queremos ofrecerle productos adecuados a su perfil. En otros casos será necesario tratar sus datos para cumplir con obligaciones exigidas por la legislación aplicable. Si necesitamos obtener su consentimiento para efectuar algún tratamiento de datos, le informaremos de ello en el momento en que sea necesario obtenerlo, pudiendo denegarlo entonces, o revocarlo en cualquier momento de acuerdo con la legislación aplicable en esta materia.
+            
+            ¿En qué nos basamos para tratar sus datos?
+            
+            En el cumplimiento de las obligaciones contractuales que hayamos asumido con usted en la prestación de servicios o gestión de sus productos.
+            En el cumplimiento de obligaciones legales en materia de evaluación de solvencia de los solicitantes de productos con riesgo de crédito, fiscales, contables, prevención de fraude y blanqueo de capitales, seguridad social u otras impuestas por organismos de supervisión o autoridades de control.
+            En la satisfacción de nuestro interés legítimo para llevar a cabo encuestas, modelos estadísticos de valoración y/o de riesgo, o estudios de mercado que pueden ser de su interés, y mejorar, si procede, los productos que ya haya contratado así como para el propio conocimiento "know-how" que permite a ING ofrecer a sus clientes servicios de valor añadido.
+            En su consentimiento expreso en los casos en que sea preciso.
+            ¿Quiénes son los destinatarios de sus datos? ING puede comunicar sus datos a entidades del grupo ING, a organismos públicos en cumplimiento de obligaciones legales, a ficheros de solvencia económica y de cumplimiento o incumplimiento de obligaciones dinerarias de acceso público o de otra tipología a la que nos encontremos adheridos cuando sea necesario para la prestación del servicio o contratación que haya solicitado, y a otras entidades ajenas a ING que tratarán sus datos por cuenta de ING como parte de la prestación de servicios que les hemos contratado.
+            
+            ¿Cuáles son sus derechos? Usted tiene derecho de acceso a sus datos, rectificación, supresión y portabilidad, así como el derecho a la limitación u oposición al tratamiento de sus datos, y a retirar el consentimiento prestado, en cualquier momento, como se explica en la información contenida aquí. También tiene derecho a presentar una reclamación ante la Autoridad de Control competente si entiende que el tratamiento de datos de ING no se ajusta a la legislación vigente.
+            
+            Puede consultar más información y detalle sobre Protección de Datos en ING aquí.
+       </textarea>
     </form>
 </body>
 </html>
